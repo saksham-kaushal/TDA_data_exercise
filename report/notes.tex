@@ -131,9 +131,11 @@
 		
 		\item \textbf{What would be the effect of changing the aperture size between measurements within the same image?}
 		
-		Would give inconsistent values of magnitudes for different objects.  
+		Would give inconsistent values of magnitudes for different objects, given that same ratio of magnitudes would not be considered for all cases.  
 		
 		\item \textbf{Optimal apertures for all images.}
+		Given in table. 
+
 		\begin{table}[h]
 			\centering
 			\begin{tabular} {l r}
@@ -166,8 +168,7 @@
 		
 		Optimal aperture size varies for different images depending upon atmospheric seeing (or the background noise), exposure time, object brightness, etc.
 		
-		\item \textbf{Why does this approach work?
-What problems might be associated with this method?} -- using secondary stars for photometry.
+		\item \textbf{Why does this approach work? What problems might be associated with this method?} -- using secondary stars for photometry.
 		
 		We need to consider only the stars which have been observed to remain static (i.e. not a variable star) over extremely long periods, so that its low photometric uncertainty can be considered reliable for calibration. If such a non-variable star lies in our field of view while observing the science object, the photometry of that object can be calibrated using the nearby secondary standard. Even if the atmospheric conditions are not very favourable, photometry can still be performed if we can safely assume that the extent of unfavourability of conditions is similar for both the objects, which is a reasonable assumption for nearby secondary standards. Secondly, widely separated secondary stars in the field of view can be used to estimate variability in atmospheric extinction across field of view. For faint events, exposure times are long and many of the primary standards appear saturated. Dimmer secondary stars therefore are more helpful in these cases.
 		
@@ -299,6 +300,41 @@ What problems might be associated with this method?} -- using secondary stars fo
 			\end{tabular}
 		\end{table}
 
+		\begin{figure} [h]
+			\centering
+			\includegraphics[width=.7\linewidth]{../codes/plots/photometry_light_curve_individual_stars.png}
+		\end{figure}
+
+		\item \textbf{How do we calculate the apparent magnitudes using secondary standards and a calibrated catalogue?} \\
+
+		\item \textbf{How can we test whether our choice of secondary standard stars were indeed suitable?} \\
+
+		\item \textbf{Using the exact time of each observation and the apparent magnitude measurements of the nova, plot a light-curve the nova.} \\
+		
+		\begin{figure} [h]
+			\centering
+			\includegraphics[width=.7\linewidth]{../codes/plots/photometry_light_curve.png}
+		\end{figure}
+
+		\item \textbf{By reference to Strope, Schaefer and Henden (2010) attempt to classify the morphological type of the light curve, giving clear reasons for your classification.} \\
+		The shape appears to be that of a smooth light curve with no oscillations, flat top, cusp or any signs of dust dip within the \(\sim 80\) days period of observation. Light curve can be represented by a power-law. The extreme variation in photometry around day 11 is probably due to poor photometric conditions and should not be confused for a dust dip because of 2 reasons - the variation in magnitude is small as compared to textbook examples of dust-dip light curves and such a dip is not retained on further observations and cannot be such short lived.
+
+		\item \textbf{Utilising material in the course notes or otherwise, determine the following \(m_0\) (maximum apparent magnitude), \(t_0\) (maximum light), \(t_2\), \(t_3\), and \(m_{15}\) (the apparent magnitude 15 days post-maximum).} \\
+		Assuming that the peak occurred on approximately the same time as our first observation (which is roughly the brightest observation), we get the following approximate values. \(m_0 \approx 16\) at \(t_0 \approx 4.122\) days post-eruption. Therefore, \(t_2 = 10.986\) days \(t_3 = 34.30\) days and \(m_{15} = 18.25\).
+
+		\item  \textbf{Using this information and the maximum magnitude–rate of decline relationship, determine an estimate of the distance to the system.} \\
+		Using \(t_2\) :
+		\[M_r = -8.663 \pm 0.773 \] 
+		Using \(t_3\) :
+		\[M_r = -8.090 \pm 1.098\]
+
+		From \(t_2\) relation, \(d = 857.43^{+366.62}_{-256.81} \) kpc \\
+		From \(t_3\) relation, \(d = 657.66^{+432.78}_{-260.83}\) kpc \\
+
+		\item \textbf{Estimate the distance using the \(t_{15}\) relation.}\\
+		\[M_{15,r} = -6.36 \pm 0.29\]
+		From \(t_{15}\) relation, \(d = 835.60^{+119.39}_{-104.46}\) kpc \\
+
 	\end{enumerate}
 
 % ================================ Spectroscopy ==========================================
@@ -373,16 +409,84 @@ What problems might be associated with this method?} -- using secondary stars fo
 
 		Average value of E(B--V) = \(0.1785 \pm 0.093\).
 
+		\item \textbf{Do you understand the differences and rationale behind these three line models?} -- Gaussian, Lorentzian, and Voight \\
+
+
 		\item \textbf{Measure the flux and FWHM of all the Balmer (H }\textsc{\RomanNumeralCaps 1} \textbf{) lines, plus at least one line from another species.} \\
-		\begin{table}
+		\begin{table} [h]
 			\centering
-			\begin{tabular} {l r}
+			\begin{tabular} {l r r r r r}
 				\toprule
+				\textbf{Spectrum} & \multicolumn{5}{c} {\centering \textbf{flux}} \\
+				& O \textsc{\RomanNumeralCaps 1} (1) & \(H \alpha\) & \(H \beta\) & \(H \gamma\) & \(H \delta\) \\
 				\midrule
+				0 & \(1.968 \pm 0.019 \times 10^{-13}\) & \(4.959 \pm 0.026 \times 10^{-13}\) & \(7.585 \pm 0.074 \times 10^{-14}\) & \(3.180 \pm 0.043 \times 10^{-14}\) & \(2.087 \pm 0.032 \times 10^{-14}\) \\
+				1 & \(2.985 \pm 0.030 \times 10^{-14}\) & \(2.755 \pm 0.013 \times 10^{-13}\) & \(4.081 \pm 0.060 \times 10^{-14}\) & \(1.889 \pm 0.045 \times 10^{-14}\) & \(1.501 \pm 0.045 \times 10^{-14}\) \\
+				2 & \(1.558 \pm 0.019 \times 10^{-14}\) & \(1.704 \pm 0.009 \times 10^{-13}\) & \(2.492 \pm 0.043 \times 10^{-14}\) & \(1.090 \pm 0.024 \times 10^{-14}\) & \(8.932 \pm 0.290 \times 10^{-15}\) \\
+				3 & \(1.126 \pm 0.016 \times 10^{-14}\) & \(1.271 \pm 0.007 \times 10^{-13}\) & \(1.855 \pm 0.037 \times 10^{-14}\) & \(8.255 \pm 0.203 \times 10^{-15}\) & \(6.127 \pm 0.205 \times 10^{-15}\) \\
+				4 & \(7.303 \pm 0.351 \times 10^{-15}\) & \(8.415 \pm 0.066 \times 10^{-14}\) & \(1.195 \pm 0.031 \times 10^{-14}\) & \(5.503 \pm 0.388 \times 10^{-15}\) & \(2.740 \pm 0.407 \times 10^{-15}\) \\
+				5 & \(6.702 \pm 0.411 \times 10^{-15}\) & \(7.874 \pm 0.057 \times 10^{-14}\) & \(1.082 \pm 0.029 \times 10^{-14}\) & \(5.517 \pm 0.427 \times 10^{-15}\) & \(2.394 \pm 0.817 \times 10^{-15}\) \\
+				6 & \(5.837 \pm 0.534 \times 10^{-15}\) & \(7.238 \pm 0.054 \times 10^{-14}\) & \(1.002 \pm 0.027 \times 10^{-14}\) & \(3.805 \pm 0.464 \times 10^{-15}\) & \(2.256 \pm 4.815 \times 10^{-15}\) \\
+				7 & \(5.881 \pm 1.159 \times 10^{-15}\) & \(7.259 \pm 0.061 \times 10^{-14}\) & \(1.012 \pm 0.032 \times 10^{-14}\) & \(4.478 \pm 0.297 \times 10^{-15}\) & \(5.712 \pm 6.099 \times 10^{-15}\) \\
+				8 & \(6.599 \pm 1.156 \times 10^{-15}\) & \(7.073 \pm 0.061 \times 10^{-14}\) & \(9.503 \pm 0.313 \times 10^{-15}\) & \(5.096 \pm 0.630 \times 10^{-15}\) & \(2.575 \pm 1.085 \times 10^{-15}\) \\
+				9 & \(5.217 \pm 1.526 \times 10^{-15}\) & \(6.777 \pm 0.061 \times 10^{-14}\) & \(9.140 \pm 0.270 \times 10^{-15}\) & \(4.743 \pm 0.382 \times 10^{-15}\) & \(4.123 \pm 69.090 \times 10^{-15}\) \\
 				\bottomrule
 			\end{tabular}
 		\end{table}
 
+		\begin{table} [h]
+		\centering
+			\begin{tabular} {l r r r r r}
+			\toprule
+			\textbf{Spectrum} & \multicolumn{5}{c} {\centering \textbf{FWHM}} \\
+			& O \textsc{\RomanNumeralCaps 1} (1) & \(H \alpha\) & \(H \beta\) & \(H \gamma\) & \(H \delta\) \\
+			\midrule
+			0 & \(78.714 \pm 0.634\) & \(51.444 \pm 0.219\) & \(47.185 \pm 0.393\) & \(51.671 \pm 0.620\) & \(51.791 \pm 0.723\) \\
+			1 & \(54.016 \pm 0.461\) & \(34.377 \pm 0.129\) & \(32.503 \pm 0.395\) & \(40.518 \pm 0.826\) & \(46.489 \pm 1.218\) \\
+			2 & \(40.734 \pm 0.431\) & \(25.816 \pm 0.107\) & \(24.359 \pm 0.347\) & \(27.682 \pm 0.525\) & \(33.247 \pm 0.947\) \\
+			3 & \(34.328 \pm 0.425\) & \(21.706 \pm 0.097\) & \(20.642 \pm 0.335\) & \(24.232 \pm 0.518\) & \(25.271 \pm 0.750\) \\
+			4 & \(27.558 \pm 1.143\) & \(18.785 \pm 0.120\) & \(17.328 \pm 0.367\) & \(21.666 \pm 1.342\) & \(12.441 \pm 1.722\) \\
+			5 & \(28.294 \pm 1.528\) & \(18.681 \pm 0.110\) & \(16.260 \pm 0.368\) & \(22.766 \pm 1.578\) & \(12.364 \pm 4.088\) \\
+			6 & \(27.210 \pm 2.297\) & \(18.759 \pm 0.114\) & \(16.619 \pm 0.381\) & \(15.875 \pm 1.816\) & \(12.843 \pm 27.378\) \\
+			7 & \(27.340 \pm 5.240\) & \(18.760 \pm 0.129\) & \(16.319 \pm 0.445\) & \(19.282 \pm 1.116\) & \(34.943 \pm 37.214\) \\
+			8 & \(33.103 \pm 5.612\) & \(18.822 \pm 0.133\) & \(16.453 \pm 0.458\) & \(23.854 \pm 2.776\) & \(15.605 \pm 6.468\) \\
+			9 & \(25.836 \pm 7.491\) & \(18.884 \pm 0.138\) & \(16.123 \pm 0.404\) & \(23.214 \pm 1.677\) & \(8.028 \pm 33.176\) \\
+			\bottomrule
+			\end{tabular}
+		\end{table}
+
+		\item \textbf{The widths of spectra lines are typically recorded as a velocity rather than as a change in wavelength, or frequency, (or energy, ) why might we choose these units?} \\
+
+		\item \textbf{How do the line fluxes change with time?} \\
+
+		\item \textbf{How do the line (flux) ratios change with time?} \\
+
+		\item \textbf{How do the line widths (FWHM) change with time?} \\
+
+		\item \textbf{Can you determine simple relationships that describe the evolution of flux and FWHM?} \\
+
+		\item \textbf{Why might the FWHM of the spectral lines evolve the way it does?} \\
+		The trend indicates decrease in velocity of the ejecta.
+
+		\item \textbf{Think back to the original description of a nova eruption, what could be causing such a change in line widths?} \\
+		As time evolves, nova ejecta is slowed down eventually as it reaches and collides with the circum-stellar material ejected by the star while it was still evolving. 
+
+		\item \textbf{Turning to the ten different continuum fits, can you comment about the evolution of the continuum, particularly with respect to the ‘colour’ of the system as the system evolves?} \\
+		As the system evolves the overall value of the continuum across all wavelengths decreases. Once the dereddening is performed, continuum contribution in the blue wavelengths begins to dominate than in redder wavelengths as time evolves, therefore, the colour of the nova tends towards blue as time evolves.
+
+		\item \textbf{Armed with an estimate of the extinction toward the system, update your distance estimates and comment on them.} \\
+		\[A_{r'} = 2.751 \times E(B--V) = 0.491 \pm 0.256\]
+		From \(t_2\) relation: \(683.282^{+413.701}_{-257.683}\) kpc \\
+
+		From \(t_3\) relation: \(524.807^{+453.780}_{-243.358}\) kpc \\
+
+		From \(t_{15}\) relation: \(666.806^{+190.231}_{-148.006}\) kpc \\
+
+		\item \textbf{What is your estimate of the absolute magnitude of this nova, and how does it relate to a typical eruption?} \\
+		Absolute magnitude values are estimated using photometry in the previous section and is of the order of \(\sim -8\) magnitudes. This is a fairly typical value for a classical nova.
+
+		\item \textbf{Based on your distance, where would you expect the nova to be located (i.e. what is its most likely host galaxy?)}\\
+		Most possibly in M31.
 
 	\end{enumerate}
 \end{document}	

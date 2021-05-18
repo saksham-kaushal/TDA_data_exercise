@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.14)  4 MAY 2021 15:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.14)  18 MAY 2021 07:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -198,50 +198,154 @@ nput line 128.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [2 <../codes/plots/optimal_aperture_phot_00.png>]
-Overfull \hbox (45.64247pt too wide) in paragraph at lines 186--210
+Overfull \hbox (45.64247pt too wide) in paragraph at lines 187--211
  [][] 
  []
 
+[3]
+Overfull \hbox (6.61122pt too wide) in paragraph at lines 277--301
+ [][] 
+ []
+
+<../codes/plots/photometry_light_curve_individual_stars.png, id=23, 352.517pt x
+ 312.7685pt>
+File: ../codes/plots/photometry_light_curve_individual_stars.png Graphic file (
+type png)
+<use ../codes/plots/photometry_light_curve_individual_stars.png>
+Package pdftex.def Info: ../codes/plots/photometry_light_curve_individual_stars
+.png  used on input line 305.
+(pdftex.def)             Requested size: 396.7435pt x 352.02116pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[3]
-Overfull \hbox (6.61122pt too wide) in paragraph at lines 276--300
- [][] 
+
+Underfull \hbox (badness 10000) in paragraph at lines 308--309
+
  []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 310--311
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--313
+
+ []
+
+<../codes/plots/photometry_light_curve.png, id=24, 352.71774pt x 311.76476pt>
+File: ../codes/plots/photometry_light_curve.png Graphic file (type png)
+<use ../codes/plots/photometry_light_curve.png>
+Package pdftex.def Info: ../codes/plots/photometry_light_curve.png  used on inp
+ut line 316.
+(pdftex.def)             Requested size: 396.7435pt x 350.70592pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 [4]
-Overfull \hbox (16.46405pt too wide) in paragraph at lines 364--372
+Underfull \hbox (badness 10000) in paragraph at lines 331--333
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 334--335
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 335--337
+
+ []
+
+[5 <../codes/plots/photometry_light_curve_individual_stars.png>] [6 <../codes/p
+lots/photometry_light_curve.png>]
+Overfull \hbox (16.46405pt too wide) in paragraph at lines 400--408
  [][] 
  []
 
-[5
 
-] [6] (./notes.aux) ) 
+Underfull \hbox (badness 10000) in paragraph at lines 412--413
+
+ []
+
+[7
+
+]
+Overfull \hbox (32.49205pt too wide) in paragraph at lines 418--435
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 458--459
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 460--461
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 462--463
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 464--465
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 466--467
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 477--478
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 478--480
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 481--482
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 483--484
+
+ []
+
+[8] [9] (./notes.aux) ) 
 Here is how much of TeX's memory you used:
- 1759 strings out of 482555
- 25735 string characters out of 5952145
- 279935 words of memory out of 5000000
- 17415 multiletter control sequences out of 15000+600000
+ 1771 strings out of 482555
+ 26337 string characters out of 5952145
+ 278935 words of memory out of 5000000
+ 17425 multiletter control sequences out of 15000+600000
  536933 words of font info for 39 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 30i,10n,34p,978b,297s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-bx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmti10.pfb>
-Output written on notes.pdf (6 pages, 172955 bytes).
+ 30i,10n,34p,978b,329s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc1
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmti10.pfb>
+Output written on notes.pdf (9 pages, 356389 bytes).
 PDF statistics:
- 74 PDF objects out of 1000 (max. 8388607)
- 51 compressed objects within 1 object stream
+ 93 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

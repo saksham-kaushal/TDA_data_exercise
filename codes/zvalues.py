@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt 
 import seaborn as sns
 
-mjd = [57585.079220,
+mjd = np.array([57585.079220,
 57586.081891,
 57587.071763,
 57588.067123,
@@ -19,7 +19,7 @@ mjd = [57585.079220,
 57637.102795,
 57644.994801,
 57655.102315,
-57659.120519]
+57659.120519])
 
 airmass = [1.7258910,
 1.6665240,
@@ -224,6 +224,18 @@ for i in range(stars_num):
 								- airmass_correction
 	mag_star_err['star'+str(i+1)] = np.array(z_err['star'+str(i+1)]) + np.array(nova_err)
 
+sns.set(font_scale=0.75)
+plt.gca().invert_yaxis()
+for key in mag_star:
+	# print(len(key.value,len(mjd))
+	# plt.scatter(mjd-57580.957,mag_star[key],label=key, s=5)
+	plt.errorbar(x=mjd-57580.957, y=mag_star[key], fmt='o', yerr=mag_star_err[key], markersize=3, capsize=3,label=key)
+plt.legend(title='Secondary standards',fontsize=10)
+plt.gca().set_aspect(7)
+plt.xlabel('Time elapsed since eruption (MJD = 57580.957)', fontsize=10)
+plt.ylabel('Apparent Magnitude', fontsize=10)
+plt.savefig('./plots/photometry_light_curve_individual_stars.png', dpi=360, bbox_inches='tight')
+
 # for i in range(stars_num):
 # 	for j in range(phot_days_num):
 # 		print(f"{mag_star['star'+str(i+1)][j]:.5f}, {mag_star_err['star'+str(i+1)][j]:.5f}")
@@ -242,11 +254,25 @@ for j in range(phot_days_num):
 	app_mag_err_nova.append(np.sqrt(sq_err)/np.sqrt(stars_num))
 	print(f"{app_mag_nova[j]:.5f}, {app_mag_err_nova[j]:.5f}")
 
-sns.set()
-plt.errorbar(x=mjd, y=app_mag_nova, fmt='o', yerr=app_mag_err_nova, markersize=3, capsize=3, ecolor='grey')
+plt.clf()
+sns.set(font_scale=0.75)
+plt.errorbar(x=mjd-57580.957, y=app_mag_nova, fmt='o', yerr=app_mag_err_nova, markersize=3, capsize=3, ecolor='grey')
 # plt.scatter(mjd, app_mag_nova,s=7)
 plt.gca().invert_yaxis()
-plt.show()
+plt.gca().set_aspect(7)
+plt.xlabel('Time elapsed since eruption (MJD = 57580.957)')
+plt.ylabel('Apparent Magnitude')
+# plt.show()
+plt.savefig('./plots/photometry_light_curve.png', dpi=360, bbox_inches='tight')
+
+linfit = np.polyfit(mjd-57580.957,app_mag_nova,1)
+linfit_fn = np.poly1d(linfit)
+max_mag = linfit_fn(3)
+mag_15 = linfit_fn(18)
+print(max_mag, mag_15)
+print(linfit_fn(25.5))
+# plt.plot(range(0,80),linfit_fn(range(0,80)))
+# plt.show()
 
 '''
 Linear fit, followed by slope calculation. 

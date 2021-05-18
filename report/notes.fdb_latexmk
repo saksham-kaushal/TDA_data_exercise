@@ -1,6 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1620123048 "notes.tex" "notes.pdf" "notes" 1620123049
+["pdflatex"] 1621301529 "notes.tex" "notes.pdf" "notes" 1621301530
   "../codes/plots/optimal_aperture_phot_00.png" 1619728794 32727 54524b49597c4327d530b072d1ec5f50 ""
+  "../codes/plots/photometry_light_curve.png" 1621217730 72556 6a98a2066bd81003d26978f212b90a8b ""
+  "../codes/plots/photometry_light_curve_individual_stars.png" 1621217730 117577 673a84bf226f0c16f9ecdef4c44b99b4 ""
   "/home/saksham/.texlive2020/texmf-var/web2c/pdftex/pdflatex.fmt" 1613326808 1146607 2162ddb54d24cd35b9e1d088a99fb843 ""
   "/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map" 1604350495 5022041 fedbf65a04995bc2a815b3fd3ce911d3 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
@@ -27,6 +29,7 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1248133631 32362 179c33bbf43f19adbb3825bb4e36e57a ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb" 1248133631 32915 7bf7720c61a5b3a7ff25b0964421c9b6 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1248133631 37944 359e864bd06cde3b1cf57bb20757fb06 ""
   "/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1612290914 71627 94eb9990bed73c364d7f53f960cc8c5b ""
@@ -47,8 +50,8 @@
   "/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def" 1584044900 25398 19ae1e59d7f4a47fefb457d851f6f503 ""
   "/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg" 1279039959 678 4792914a8f45be57bb98413425e4c7af ""
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1612290070 39615 33f7d51cf394547e122c9714408659b1 ""
-  "notes.aux" 1620123048 202 fb4219b0057e5409f993ab86061e4212 "pdflatex"
-  "notes.tex" 1620123048 24673 45da2cb55d59b46451131b7ace33cd21 ""
+  "notes.aux" 1621301530 202 9d4ac1286d3ec600ebdcd37fe451d865 "pdflatex"
+  "notes.tex" 1621301529 33451 d6f7f840519c43a0f21e24771c3dc78b ""
   (generated)
   "notes.aux"
   "notes.log"
