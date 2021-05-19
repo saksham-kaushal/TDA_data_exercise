@@ -10,10 +10,10 @@
 \RequirePackage{ifthen,amsmath,amssymb,amsthm,bm,graphicx,color,natbib}
 
 %increase the printed page area width
-\extrawidth{0.75cm}
+\extrawidth{2.5cm}
 
 %increase header space on title page only
-\extraheadheight[1.5cm]{0cm}
+\extraheadheight[1cm]{0cm}
 
 %setup page headers/footers for first and subsequent pages
 \pagestyle{headandfoot}

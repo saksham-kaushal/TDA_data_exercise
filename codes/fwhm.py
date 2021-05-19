@@ -152,7 +152,8 @@ plt.errorbar(x=time, y=hdelta_fwhm*c/wavelength[4], fmt='o', yerr=hdelta_fwhm_er
 plt.legend(title='Spectral Line')
 plt.xlabel('Time since eruption (days)')
 plt.ylabel('FWHM (km/s)')
-plt.show()
+# plt.show()
+plt.savefig('./plots/line_width_evolution_kmps.png', dpi=550,bbox_inches='tight')
 
 plt.clf()
 sns.set(font_scale=0.85)
@@ -164,4 +165,5 @@ plt.errorbar(x=np.log10(time), y=np.log10(hdelta_fwhm), fmt='o', yerr=hdelta_fwh
 plt.legend(title='Spectral Line')
 plt.xlabel('Time since eruption (days)')
 plt.ylabel(r'FWHM ($\AA$)')
-plt.show()
+# plt.show()
+plt.savefig('./plots/line_width_evolution_angstrom.png', dpi=550,bbox_inches='tight')

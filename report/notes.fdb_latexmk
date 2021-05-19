@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1621301529 "notes.tex" "notes.pdf" "notes" 1621301530
+["pdflatex"] 1621301529 "notes.tex" "notes.pdf" "notes" 1621362656
   "../codes/plots/optimal_aperture_phot_00.png" 1619728794 32727 54524b49597c4327d530b072d1ec5f50 ""
   "../codes/plots/photometry_light_curve.png" 1621217730 72556 6a98a2066bd81003d26978f212b90a8b ""
   "../codes/plots/photometry_light_curve_individual_stars.png" 1621217730 117577 673a84bf226f0c16f9ecdef4c44b99b4 ""
